@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package searchengine;
+package src;
 
-import java.io.File;  // Import the File class
 /**
  *
  * @author No1
  */
-public class fileSample {
+public class SearchWordsInText {
     
-    String getNameOfFile(File file){
-        System.out.println(file.mkdir());
-        return null;
+  
+    public void search(String[] keywordsToSearch, String[] wordsOfText){
+        
+        
+    
     }
-    
 }
