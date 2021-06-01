@@ -18,10 +18,10 @@ public class SearchEngine {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        File src = new File("C:\\Users\\No1\\OneDrive\\edu\\OS\\project\\searchEngine\\SearchEngine\\src\\searchengine\\testDir");
+        File input = new File("C:\\Users\\No1\\OneDrive\\edu\\OS\\project\\searchEngine\\SearchEngine\\src\\searchengine\\testDir");
         fileSample fs = new fileSample();
         
-        fs.getNameOfFile(src);
+        fs.getNameOfFile(input);
     }
     
 }
