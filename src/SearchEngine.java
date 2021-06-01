@@ -37,26 +37,24 @@ public class SearchEngine {
         String textPath = "./src/res/input.txt";
         String keyWordsPath = "./src/res/words.txt";
 
-        
-        fileSample fs = new fileSample();
+//        fileSample fs = new fileSample();
 //        Scanner scanner = new Scanner(System.in);
-
-        String[] words = {"abc", "def"};
-
-        Thread thread = new SingleThread();
-
-        String[] text = readAllBytes(textPath).toLowerCase(Locale.ROOT).replaceAll("[.,]*", "").split(" ");
+//        String[] text = readAllBytes(textPath).toLowerCase(Locale.ROOT).replaceAll("[.,]*", "").split(" ");
         String[] keyWords = readAllBytes(keyWordsPath).toLowerCase(Locale.ROOT).replaceAll("[.,]*", "").split(" ");
 
-//        System.out.println("text:");
-//        for (String string : text) {
-//            System.out.println(string);
-//        }
-//        System.out.println("");
-//        System.out.println("");
-        for (String string : keyWords) {
-            System.out.println(string);
+        File textFile = new File(textPath);
+        FileReader fr = null;
+        try {
+            fr = new FileReader(textFile);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(SearchEngine.class.getName()).log(Level.SEVERE, null, ex);
         }
+        BufferedReader br = new BufferedReader(fr);
+
+        
+        Thread thread = new SingleThread(br);
+
+        
 
 //        thread.start();
 //        fs.getNameOfFile(text);
@@ -75,7 +73,7 @@ public class SearchEngine {
     }
 
     public static void test() {
-     
+
     }
 
 }
