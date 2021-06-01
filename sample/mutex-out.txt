@@ -1,0 +1,14 @@
+The word «java» found in line 5 by thread 1found at 16:47:08.140 saved at 16:47:08.140
+The word «react» found in line 3015 by thread 4found at 16:47:08.140 saved at 16:47:08.140
+The word «php» found in line 552 by thread 2found at 16:47:08.140 saved at 16:47:08.140
+The word «css» found in line 3011 by thread 3found at 16:47:08.140 saved at 16:47:08.156
+The word «html» found in line 3019 by thread 4found at 16:47:08.140 saved at 16:47:08.156
+The word «php» found in line 564 by thread 2found at 16:47:08.156 saved at 16:47:08.156
+The word «css» found in line 3011 by thread 3found at 16:47:08.156 saved at 16:47:08.156
+The word «css» found in line 3017 by thread 3found at 16:47:08.156 saved at 16:47:08.156
+The word «react» found in line 3019 by thread 4found at 16:47:08.156 saved at 16:47:08.156
+The word «java» found in line 542 by thread 1found at 16:47:08.156 saved at 16:47:08.156
+The word «java» found in line 550 by thread 1found at 16:47:08.156 saved at 16:47:08.156
+The word «html» found in line 3025 by thread 4found at 16:47:08.156 saved at 16:47:08.171
+The word «html» found in line 3031 by thread 4found at 16:47:08.171 saved at 16:47:08.171
+The word «php» found in line 3025 by thread 2found at 16:47:08.265 saved at 16:47:08.265

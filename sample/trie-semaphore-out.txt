@@ -1,0 +1,12 @@
+The word «php» found in line 552 by thread 2found at 20:03:21.895 saved at 20:03:21.895
+The word «java» found in line 5 by thread 1found at 20:03:21.895 saved at 20:03:21.895
+The word «php» found in line 564 by thread 2found at 20:03:21.895 saved at 20:03:21.895
+The word «java» found in line 550 by thread 1found at 20:03:21.910 saved at 20:03:21.910
+The word «css» found in line 4871 by thread 3found at 20:03:21.988 saved at 20:03:21.988
+The word «php» found in line 3025 by thread 2found at 20:03:21.988 saved at 20:03:21.988
+The word «java» found in line 3 by thread 1found at 20:04:31.296 saved at 20:04:31.296
+The word «php» found in line 552 by thread 2found at 20:04:31.296 saved at 20:04:31.296
+The word «php» found in line 564 by thread 2found at 20:04:31.296 saved at 20:04:31.296
+The word «css» found in line 3017 by thread 3found at 20:04:31.312 saved at 20:04:31.312
+The word «html» found in line 5347 by thread 4found at 20:04:31.390 saved at 20:04:31.390
+The word «php» found in line 3025 by thread 2found at 20:04:31.390 saved at 20:04:31.390
