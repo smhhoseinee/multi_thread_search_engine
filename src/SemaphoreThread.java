@@ -28,15 +28,15 @@ public class SemaphoreThread extends Thread {
     String[] givenWords;
     String resultPath;
     int id;
-    int semaphoreAccessCount;
+    Semaphore semaphore;
 
-    public SemaphoreThread(String textPath, String[] words, String resultPath, int id, int semaphoreAccessCount) {
+    public SemaphoreThread(String textPath, String[] words, String resultPath, int id, Semaphore semaphore) {
 //        this.br = br;
         this.textPath = textPath;
         this.givenWords = words;
         this.resultPath = resultPath;
         this.id = id;
-        this.semaphoreAccessCount = semaphoreAccessCount;
+        this.semaphore = semaphore;
 
     }
 
@@ -55,12 +55,10 @@ public class SemaphoreThread extends Thread {
         int lineCounter = 0;
         System.out.println("start");
         String currentLine;
-        Semaphore semaphore = new Semaphore(semaphoreAccessCount);
 
         try {
             while ((currentLine = br.readLine()) != null) {
                 lineCounter++;
-//                currentLine = currentLine.replaceAll("[.,]*", "").toLowerCase(Locale.ROOT);
                 currentLine = currentLine.toLowerCase(Locale.ROOT);
                 for (String word : givenWords) {
                     if (currentLine.contains(word)) {
