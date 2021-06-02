@@ -1,0 +1,13 @@
+java found in line 5 in thread 0 at 12:03:21.712 wrote at 12:03:21.717
+php found in line 552 in thread 1 at 12:03:21.712 wrote at 12:03:21.717
+html found in line 11 in thread 3 at 12:03:21.712 wrote at 12:03:21.717
+css found in line 1 in thread 2 at 12:03:21.712 wrote at 12:03:21.717
+php found in line 564 in thread 1 at 12:03:21.718 wrote at 12:03:21.718
+java found in line 542 in thread 0 at 12:03:21.743 wrote at 12:03:21.743
+java found in line 550 in thread 0 at 12:03:21.744 wrote at 12:03:21.744
+php found in line 3025 in thread 1 at 12:03:21.776 wrote at 12:03:21.777
+css found in line 3011 in thread 2 at 12:03:21.780 wrote at 12:03:21.780
+html found in line 3019 in thread 3 at 12:03:21.780 wrote at 12:03:21.781
+css found in line 3017 in thread 2 at 12:03:21.781 wrote at 12:03:21.781
+html found in line 3025 in thread 3 at 12:03:21.781 wrote at 12:03:21.781
+html found in line 3031 in thread 3 at 12:03:21.782 wrote at 12:03:21.782

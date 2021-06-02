@@ -17,40 +17,45 @@ import java.util.logging.Logger;
  *
  * @author No1
  */
-public class SingleThread extends Thread {
+public class SingleThreadSearchWithoutSemaphore extends Thread {
 
     BufferedReader br;
     String[] givenWords;
     String resultPath;
     int id;
 
-    public SingleThread(BufferedReader br, String[] words, String resultPath) {
+    public SingleThreadSearchWithoutSemaphore(BufferedReader br, String[] words, String resultPath, int id) {
         this.br = br;
         this.givenWords = words;
         this.resultPath = resultPath;
+        this.id = id;
 
     }
 
     @Override
     public void run() {
         int lineCounter = 0;
+        System.out.println("start");
         String currentLine;
         try {
-            if ((currentLine = br.readLine()) != null) {
+            while ((currentLine = br.readLine()) != null) {
                 lineCounter++;
 //                currentLine = currentLine.replaceAll("[.,]*", "").toLowerCase(Locale.ROOT);
                 currentLine = currentLine.toLowerCase(Locale.ROOT);
                 for (String word : givenWords) {
                     if (currentLine.contains(word)) {
-                        String result = word + "found in line " + lineCounter + " in thread " + id + " at " + java.time.LocalTime.now();
+                        String result = word + " found in line " + lineCounter + " in thread " + id + " at " + java.time.LocalTime.now();
 
-                        FileWriter fw = new FileWriter(resultPath);
-                        fw.append(result + "wrote at " + java.time.LocalTime.now());
+                        FileWriter fileWriter = new FileWriter(resultPath, true);
+                        fileWriter.append(result + " wrote at " + java.time.LocalTime.now() + "\n");
+                        fileWriter.close();
+
                     }
                 }
             }
+
         } catch (IOException ex) {
-            Logger.getLogger(SingleThread.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SingleThreadSearchWithoutSemaphore.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
