@@ -1,7 +1,0 @@
-java
-php
-css
-html
-react
-hash
-ament
