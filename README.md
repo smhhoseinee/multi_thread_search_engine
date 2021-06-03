@@ -1,6 +1,8 @@
 # os_2_project_threads
 
-گزارش پروژه جستجو درس سیستم عامل
+## گزارش پروژه جستجو درس سیستم عامل
+
+
 9712762670
 محمد حسین حسینی
 9722762473
@@ -9,10 +11,15 @@
 پروژه از دو بخش عمده src , res  تشکیل شده است که در res فایل های متنی مورد نظر پروژه و خروجی آنها و در src کد های پروژه قرار دارند .
  
 مطابق با خواسته صورت سوال این پروژه در 5 حالت زیر قابل اجراست :
+
 1-	single thread
+
 2-	multi thread without any lock
+
 3-	mutex lock multi thread 
+
 4-	semaphore lock multi thread 
+
 5-	trie tree using semaphore multi thread 
 
 برای هر یک از این موارد فایل خروجی مورد نظر در بخش res  موجود است.
@@ -24,15 +31,18 @@ resultPath  : آدرس خروجی
 
 برای اجرای هر یک از 5 مورد نامبرده کافیست بخش مربوطه را uncomment نماییم ؛ (نام خروجی متناسب با الگوریتم uncomment شده تغییر میکند)
 خروجی کامل هر یک از الگوریتم ها در ./res/ آمده است در انتهای هریک زمان اجرای کامل در خروجی نوشته شده است :
-172ms
-	singleThreadResult.txt  
-139ms	multiThreadsWithoutLockResult.txt
-175ms	MutexResult.txt                    
-180ms	SemaphoreResult.txt                
 
-192ms	TrieTreeResult-o.txt
 
-با بررسی داده ها میتوان موارد زیر را نتیجه گرفت :
+|Result | time taken|
+|--- | ---|
+|singleThreadResult.txt | 172ms|
+|multiThreadsWithoutLockResult.txt | 139ms|
+|MutexResult.txt | 175ms|
+|SemaphoreResult.txt | 180ms|
+|TrieTreeResult-o.txt | 192ms|
+
+
+
 •	که از 1 ترد به چند ترد سرعت اجرا افزایش می یابد امّا خطر race condition وجود خواهد داشت.
 •	با کمک lock های mutex , semaphore خطر race condition برطرف می شود امّا اندکی سربار در زمان اجرا به همراه دارد.
 •	mutex lock اندکی عملکرد بهتری نسبت به semaphore lock دارد. (در اینجا semaphore = 1 قرار دادیم امّا اگر در پروژه ای بخواهیم تعداد همزمان افزایش یابد تنها semaphore این قابلیت را داراست و از mutex lock نمیتوانیم استفاده کنیم
